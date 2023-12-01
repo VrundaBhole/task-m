@@ -1,0 +1,9 @@
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+
+<div style="display: flex;">
+
+  <app-body style="width: 80%;" [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth">
+
+  </app-body>
+  <app-side2 style="width: 20%;"></app-side2>
+</div>

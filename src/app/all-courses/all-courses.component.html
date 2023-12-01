@@ -1,0 +1,20 @@
+<h3>Your Courses</h3>
+
+<div style="display: flex; justify-content: center;">
+    <div *ngFor="let item of arrayOfObjects" style="width: 80%;display: flex; gap: 5px;">
+    <div [ngStyle]="{ 'background-color': item.color,  'padding': '1rem','display': 'flex','gap':'5px','flex-direction': 'row','width': '90%','justify-content': 'space-around','border-radius':'10px' }">
+        <div style="display: flex;
+    align-items: center;
+    background-color: #98BDFF;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;">{{ item.name }}</div>
+        <div style="display: flex; flex-direction: column; color: white;">
+            <div>{{ item.value }}</div>
+            <div>{{ item.description }}</div>
+        </div>
+        <div style="display: flex; align-items: flex-end;">
+<i class='fas fa-arrow-circle-right' style='font-size:24px;color: white;'></i>        </div>
+    </div>
+        </div>
+</div>
